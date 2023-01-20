@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+}
+
+.App details {
+  margin-bottom: 1em;
+}
+
+.App .infoPanel {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+.App .infoPanel .infoItem {
+  padding: 0.2em;
+  font-size: 20px;
+}
+
+.App .infoPanel .infoItem .arrivingInMinutes {
+  text-align: right;
+  min-width: 40px;
+  display: inline-block;
+}
+
+.App .infoPanel .infoItem .destination {
+  font-weight: bold;
+}
