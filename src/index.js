@@ -1,10 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+
 
 import "./styles.css";
 
 const DASHBOARD_URL =
-  "https://vdix0nrox3.execute-api.eu-west-1.amazonaws.com/prod/dashboard/d733b0b2-f429-4bdf-82ab-c9fc3b3190d7";
+  "https://wlyy2owh8i.execute-api.eu-west-1.amazonaws.com/dashboard/d733b0b2-f429-4bdf-82ab-c9fc3b3190d7";
 
 class App extends React.Component {
   constructor(props) {
@@ -67,4 +68,6 @@ class App extends React.Component {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const root = ReactDOM.createRoot(rootElement)
+root.render(<App />);
+
